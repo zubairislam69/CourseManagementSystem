@@ -35,12 +35,12 @@ Then, go into the first terminal and write:
       npm run dev
       
  ## Features     
-
-    User authentication and authorization
+ 
     Course creation, editing, and deletion
+    Student creation, editing, and deletion
+    Lecturer creation, editing, and deletion
+    Simple UI
     Student registration for courses
-    Course attendance tracking
-    Gradebook for tracking student grades
 
 ## Technologies Used
 
