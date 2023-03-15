@@ -1,6 +1,6 @@
 # Course Management System
 
-This is a simple course management system built with React Bootstrap, Express, MySQL, Node.js, and CSS.
+This is a simple course management system built with React Bootstrap, JavaScript, Express, MySQL, Node.js, and CSS.
 ## Getting Started
 
 To run this project, first clone the repository to your local machine:
