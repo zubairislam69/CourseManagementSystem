@@ -5,31 +5,36 @@ This is a simple course management system built with React Bootstrap, Express, M
 
 To run this project, first clone the repository to your local machine:
 
-   git clone https://github.com/your-username/course-management-system.git
+      git clone https://github.com/zubairislam69/CourseManagementSystem.git
 
-Then navigate into the project directory and install the necessary dependencies:
 
-   cd course-management-system
-   npm install
 
-You will also need to set up a MySQL database. Use the database.sql file in the project root directory to create the necessary tables and seed the database with sample data.
+You will also need to set up a MySQL database. Open MySQL Workbench, create a new connection, and create a database inside a query file using this command to store the tables given in the next step. 
 
-Next, create a .env file in the project root directory and set the following environment variables:
+      CREATE DATABASE coursemanagement;
+ 
+Next, copy everything inside the file named SQL.sql and execute it inside a query file inside MySQL Workbench, also making sure that you have the new database selected. You should now see 3 tables created. Then, go back into your project in VS Code and in the server/dbConfig.js file, you can update the host, user, and password to the ones set by your own Workbench.
 
-makefile
+Next, open two terminals to install the dependencies. In the first terminal, write:
 
-DB_HOST=your-database-host
-DB_USER=your-database-username
-DB_PASSWORD=your-database-password
-DB_NAME=your-database-name
+      cd client
+      npm install
+      
+In the second terminal, write:      
+ 
+      cd server
+      npm install
 
-Finally, start the development server:
 
-sql
+Finally, to start the development server, go into the first terminal and write:
 
-npm start
+      npm start
+      
+Then, go into the first terminal and write:
 
-Features
+      npm run dev
+      
+ ## Features     
 
     User authentication and authorization
     Course creation, editing, and deletion
@@ -37,7 +42,7 @@ Features
     Course attendance tracking
     Gradebook for tracking student grades
 
-Technologies Used
+## Technologies Used
 
     React Bootstrap for UI components
     Express for server-side code
